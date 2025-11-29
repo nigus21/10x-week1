@@ -1,100 +1,100 @@
-⭐ WEEK 1 — High-LEVEL SUMMARY
+# 📊 Week 1 — Sentiment Analysis & Stock Movement Study
 
-In Week 1, my goal was to answer a practical business question:
+## 📌 Overview
 
-“Does financial news sentiment influence daily stock price movements?”
+In Week 1 of my project, I set out to answer a key question:
 
-To explore this, I went through four major steps.
+> **Does financial news sentiment influence daily stock price movements?**
 
-1️⃣ I Collected and Prepared the Data
+To explore this, I combined financial news data with stock market data and performed sentiment analysis, return calculations, and correlation study.
 
-I gathered two types of information:
+---
 
-📌 Stock Market Data
+## 🗂️ 1. Data Collection & Preparation
 
-Daily price information such as:
+I worked with two main datasets:
 
-open, high, low, close
+### **📌 Stock Market Data**
 
-volume
+* Open, High, Low, Close
+* Volume
+* Daily price movements
 
-📌 Financial News Headlines
+### **📌 Financial News Headlines**
 
-Daily news related to the company or stock I was analyzing.
+* Daily headlines related to the target stock
+* Cleaned and prepared for sentiment analysis
 
-Why this matters:
+**Why:**
+Stock prices move based on investor behavior, and investors react to news.
+Understanding news provides insights into short-term market reaction.
 
-Stock prices move based on investor reactions.
-Investors react to news.
-So understanding news helps me understand market behavior.
+---
 
-2️⃣ I Performed Sentiment Analysis on the News
+## 💬 2. Sentiment Analysis (NLP)
 
-Using NLP (Natural Language Processing), I converted each headline into a sentiment score:
+I applied Natural Language Processing to convert each news headline into a numerical sentiment score.
 
-Polarity Score (–1 to +1)
+### **Polarity Score (–1 to +1)**
 
-–1 → very negative news
+* **–1** → very negative
+* **0** → neutral
+* **+1** → very positive
 
-0 → neutral
+This transformed subjective text into measurable data.
 
-+1 → very positive news
+---
 
-Example:
-“Company beats earnings expectations” → positive
-“Company faces investigation” → negative
+## 📈 3. Stock Return Calculation
 
-Why this matters:
+To understand how markets responded, I calculated daily stock returns using:
 
-This allowed me to turn qualitative, subjective headlines into numbers that I could analyze objectively.
+```
+Daily Return = (Close - Previous Close) / Previous Close
+```
 
-3️⃣ I Calculated Daily Stock Returns
+This shows whether the stock moved up or down after the news.
 
-To measure how the stock reacted, I calculated daily returns:
+---
 
-Daily Return = Percentage change in stock price
+## 🔗 4. Relationship Between Sentiment & Stock Returns
 
-Example:
-Price from $100 → $102 → return = +2%
+After aligning daily sentiment with daily stock returns, I analyzed the correlation.
 
-Why this matters:
+### **Key Finding:**
 
-Returns show whether the market responded positively or negatively after the news came out.
+There was a **weak but positive correlation** between news polarity and stock returns.
 
-4️⃣ I Measured the Relationship Between Sentiment and Returns
-Once I had: daily sentiment and daily stock returns
+**Meaning:**
 
-I aligned them by date and checked the correlation.
+* Positive news tends to be followed by slightly positive returns
+* Negative news tends to be followed by slightly negative returns
+* Sentiment affects the market, but it’s only one of many factors
 
-What I found:
-There was usually a weak but positive correlation.
-This means:
-Positive news tends to be followed by slightly positive stock returns
-Negative news tends to be followed by slight declines
-But the effect is not very strong because markets react to many factors
+---
 
-Business meaning:
-Sentiment gives an early signal of potential price direction, but it is not a full predictor.
+## 📊 5. Data Visualization
 
-5️⃣ I Visualized the Results
-To communicate the insights clearly, I created:
-Line charts for stock prices
-Scatter plots of polarity vs returns
-Correlation metrics to quantify the relationship
+To make the results easy to understand, I created:
 
-Why this matters:
-These visuals make it easy for any decision-maker to quickly see:
-- trends
-- patterns
-- how news sentiment affects market behavior
+* 📈 **Line charts** for stock prices
+* 🟢 **Scatter plots** of sentiment vs. returns
+* 🔥 **Correlation metrics** for numerical insights
 
-⭐ My Final Takeaway from Week 1
-By the end of Week 1, I learned that:
-✔ News sentiment does affect stock movement
-✔ Positive headlines are usually followed by small price increases
-✔ Negative headlines often lead to declines
-✔ The relationship is real but not very strong
-✔ Sentiment can help in short-term forecasting and risk assessment
+These visuals reveal patterns and help interpret how sentiment influences market behavior.
+
+---
+
+## ✅ Final Takeaways (Week 1)
+
+* News sentiment **does influence** short-term stock movements
+* Positive sentiment is usually followed by mild price increases
+* Negative sentiment is associated with mild declines
+* The relationship is **real but not strongly predictive**
+* Sentiment analysis can assist in forecasting and risk assessment
+
+
+
 
 # 10x Week-1 Project: Predicting Stock Movements with News Sentiment
 
